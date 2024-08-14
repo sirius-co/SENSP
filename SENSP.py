@@ -1231,7 +1231,7 @@ for train_sample in [1,2,3,4,5]: #[8,11,16,17,19] (ACM)  [10,14,16,18,20] (IMDB)
         dataset.node_attr = scipy.io.loadmat(path + "imdb.mat")['feature']
         dataset.atts = len(dataset.node_attr[0])
         dataset.gt = np.loadtxt(path + "ground_truth.txt")
-        test_ids = np.sort(loadtxt(path + 'test_ids_'+str(train_sample)+'.txt')).astype(int)
+        test_ids = list(np.sort(loadtxt(path + 'test_ids_'+str(train_sample)+'.txt')).astype(int))
         train_ids = np.sort(loadtxt(path + 'train_ids_'+str(train_sample)+'.txt')).astype(int)
         gt_ = np.zeros((dataset.nodes,3))
         
