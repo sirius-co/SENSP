@@ -3,7 +3,7 @@ Spectral Embedding of Multiplex Networks with Negative Sampling and Pseudo-label
 
 The source code for the ICDE 2025 submission.
 
-To run our proposal please follow instructions below:
+To run our proposal, please follow instructions below:
 
 Create an enviroment:
 conda create -n sensp python=3.9
